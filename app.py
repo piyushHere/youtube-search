@@ -1,23 +1,23 @@
-# Importing flask module in the project is mandatory
-# An object of Flask class is our WSGI application.
 import config
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
  
-# Flask constructor takes the name of
-# current module (__name__) as argument.
+
 app = Flask(__name__)
 app.config.from_object(config.Config)
 db = SQLAlchemy(app)
- 
-# The route() function of the Flask class is a decorator,
-# which tells the application which URL should call
-# the associated function.
-@app.route('/')
-# ‘/’ URL is bound with hello_world() function.
-def hello_world():
-    return 'Hello World'
- 
+migrate = Migrate(app, db)
+
+class Youtube(db.Model):
+    __tablename__ = 'youtube'
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String())
+    desciption = db.Column(db.String())
+    thumbnail_url = db.Column(db.String())
+    publishing_datetime_ts = db.Column(db.DateTime(True), server_default=db.text("now()"))
+
 # main driver function
 if __name__ == '__main__':
  
