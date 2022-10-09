@@ -2,6 +2,7 @@ from urllib.parse import urljoin
 import requests
 from os import environ, path
 from dotenv import load_dotenv
+import datetime
 
 
 basedir = path.abspath(path.dirname(__file__))
@@ -22,7 +23,10 @@ class Youtube():
         )
         params = {
             'part': 'snippet',
-            'key': self.api_key
+            'key': self.api_key,
+            'publishedAfter': (datetime.datetime.now() - datetime.timedelta(weeks=1)).isoformat() + 'Z',
+            'type': 'video',
+            'order': 'date'
         }
         response = requests.get(url, params)
         return response.json()
