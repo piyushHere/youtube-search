@@ -67,6 +67,18 @@ def get_youtube_data():
         })
     return json.dumps(response)
 
+@app.route("/search")
+def search_youtube_data():
+    response = []
+    query = request.args.get("query") # here query will be the search inputs name
+    allVideos = Youtube.query.filter(Youtube.title.ilike("%"+query+"%"), Youtube.desciption.ilike("%"+query+"%")).all()
+    for video in allVideos:
+        response.append({
+            "title": video.title,
+            "description": video.desciption
+        })
+    return json.dumps(response)
+
 # main driver function
 if __name__ == '__main__':
  
