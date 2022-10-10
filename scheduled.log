@@ -1,0 +1,418 @@
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x108616890>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='youtube.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&key=AIzaSyAT1WXf5-tEFXd0fdT7MzNzuU8_2Wl-_Xo&publishedAfter=2022-10-02T14%3A05%3A11.162036Z&type=video&order=date (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108616890>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/bin/flask", line 10, in <module>
+    sys.exit(main())
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/flask/cli.py", line 1047, in main
+    cli.main()
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/flask/cli.py", line 357, in decorator
+    return __ctx.invoke(f, *args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/app.py", line 29, in scheduled
+    fetch_youtube()
+  File "/Users/piyushsapra/youtube fetch/app.py", line 52, in fetch_youtube
+    response = youtube_client.get_search_response()
+  File "/Users/piyushsapra/youtube fetch/clients/youtube.py", line 31, in get_search_response
+    response = requests.get(url, params)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='youtube.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&key=AIzaSyAT1WXf5-tEFXd0fdT7MzNzuU8_2Wl-_Xo&publishedAfter=2022-10-02T14%3A05%3A11.162036Z&type=video&order=date (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108616890>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Fetching data from youtube
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x106316890>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='youtube.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&key=AIzaSyAT1WXf5-tEFXd0fdT7MzNzuU8_2Wl-_Xo&publishedAfter=2022-10-02T16%3A06%3A01.289347Z&type=video&order=date (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106316890>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/piyushsapra/youtube fetch/virtualenv/bin/flask", line 10, in <module>
+    sys.exit(main())
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/flask/cli.py", line 1047, in main
+    cli.main()
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/flask/cli.py", line 357, in decorator
+    return __ctx.invoke(f, *args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/app.py", line 29, in scheduled
+    fetch_youtube()
+  File "/Users/piyushsapra/youtube fetch/app.py", line 52, in fetch_youtube
+    response = youtube_client.get_search_response()
+  File "/Users/piyushsapra/youtube fetch/clients/youtube.py", line 31, in get_search_response
+    response = requests.get(url, params)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/piyushsapra/youtube fetch/virtualenv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='youtube.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&key=AIzaSyAT1WXf5-tEFXd0fdT7MzNzuU8_2Wl-_Xo&publishedAfter=2022-10-02T16%3A06%3A01.289347Z&type=video&order=date (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106316890>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
+Fetching data from youtube
+Stored data fetched from youtube
