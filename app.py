@@ -1,8 +1,10 @@
 import config
-from flask import Flask, request
+from flask import Flask, request, abort
 from flask_migrate import Migrate
 from clients.youtube import Youtube
+
 youtube_client = Youtube()
+
 from sqlalchemy import desc
 import json
  
@@ -10,6 +12,8 @@ import json
 app = Flask(__name__)
 app.config.from_object(config.Config)
 from models import db, Youtube
+from services.youtube import YoutubeService
+youtube_service = YoutubeService()
 migrate = Migrate(app, db)
 
 
@@ -46,29 +50,21 @@ def fetch_youtube():
 
 @app.route("/youtube_data")
 def get_youtube_data():
-    page = request.args.get('page', 1, type=int)
-    offset = request.args.get('offset', 5, type=int)
-    response = []
-    objects = db.session.query(Youtube).order_by(desc('publishing_datetime_ts')).paginate(
-        page=page, per_page=offset,error_out=False,max_per_page=10
-        )
-    for obj in objects:
-        response.append({
-            "title": obj.title
-        })
-    return json.dumps(response)
+    try:
+        data = youtube_service.get_youtube_data()
+        return json.dumps(data)
+    except Exception as e:
+        print("something went wrong with the server", e)
+        abort(500, e)
 
 @app.route("/search")
 def search_youtube_data():
-    response = []
-    query = request.args.get("query") # here query will be the search inputs name
-    allVideos = Youtube.query.filter(Youtube.title.ilike("%"+query+"%"), Youtube.desciption.ilike("%"+query+"%")).all()
-    for video in allVideos:
-        response.append({
-            "title": video.title,
-            "description": video.desciption
-        })
-    return json.dumps(response)
+    try:
+        data = youtube_service.search_youtube_data()
+        return json.dumps(data)
+    except Exception as e:
+        print("something went wrong with the server", e)
+        abort(500, e)
 
 # main driver function
 if __name__ == '__main__':
