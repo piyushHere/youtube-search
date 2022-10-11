@@ -11,7 +11,7 @@ load_dotenv(path.join(basedir, '.env'))
 API_HOST = environ.get('YOUTUBE_HOST')
 API_KEY = environ.get('YOUTUBE_DATA_V3_KEY')
 
-class Youtube():
+class YoutubeClient():
     def __init__(self):
         self.api_host = API_HOST
         self.search_api = "youtube/v3/search"
@@ -29,5 +29,9 @@ class Youtube():
             'order': 'date'
         }
         response = requests.get(url, params)
+        if response.status_code == 403:
+            raise Exception("Token quote rate limiting achieved, please enter a different token")
+        if response.status_code == 500:
+            raise Exception("Something went wrong with the youtube server")
         return response.json()
             
