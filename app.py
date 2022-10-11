@@ -1,9 +1,10 @@
-import config
+import config, atexit
 from flask import Flask, request, abort
 from flask_migrate import Migrate
-from clients.youtube import Youtube
+from clients.youtube import YoutubeClient
+from apscheduler.schedulers.background import BackgroundScheduler
 
-youtube_client = Youtube()
+youtube_client = YoutubeClient()
 
 from sqlalchemy import desc
 import json
@@ -17,36 +18,15 @@ youtube_service = YoutubeService()
 migrate = Migrate(app, db)
 
 
-@app.cli.command()
-def scheduled():
+def youtube_cron_job():
     """Run scheduled job."""
     print("Fetching data from youtube")
-    fetch_youtube()
+    youtube_service.fetch_youtube()
     print("Stored data fetched from youtube")
 
-def get_response_items_dict(response):
-    items = response["items"]
-    response_list = []
-    for item in items:
-        response_list.append({
-            "title": item["snippet"]["title"],
-            "desciption": item["snippet"]["description"],
-            "publishing_datetime_ts": item["snippet"]["publishTime"],
-            "thumbnail_url": item["snippet"]["thumbnails"]["default"]["url"]
-        })
-    return response_list
-
-def insert_into_db(response):
-    for obj in response:
-        youtube_row = Youtube(**obj)
-        db.session.add(youtube_row)
-    db.session.commit()
-    db.session.close()
-
-def fetch_youtube():
-    response = youtube_client.get_search_response()
-    response = get_response_items_dict(response)
-    insert_into_db(response)
+cron = BackgroundScheduler()
+cron.add_job(func=youtube_cron_job, trigger="interval", seconds=10)
+cron.start()
 
 @app.route("/youtube_data")
 def get_youtube_data():
@@ -65,6 +45,8 @@ def search_youtube_data():
     except Exception as e:
         print("something went wrong with the server", e)
         abort(500, e)
+
+atexit.register(lambda: cron.shutdown(wait=False))
 
 # main driver function
 if __name__ == '__main__':
