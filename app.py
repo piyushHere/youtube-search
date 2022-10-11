@@ -12,7 +12,7 @@ import json
 
 app = Flask(__name__)
 app.config.from_object(config.Config)
-from models import db, Youtube
+from models import db
 from services.youtube import YoutubeService
 youtube_service = YoutubeService()
 migrate = Migrate(app, db)
