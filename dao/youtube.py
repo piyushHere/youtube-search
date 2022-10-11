@@ -24,7 +24,8 @@ class YoutubeDAO(object):
         )
         return videos
     
-    def insert(video_mappings):
+    def insert(self, video_mappings):
         for obj in video_mappings:
             youtube_row = Youtube(**obj)
             db.session.add(youtube_row)
+
