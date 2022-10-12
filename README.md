@@ -22,4 +22,6 @@ APIs:
 3. To get paginated youtube data, visit [localhost:5000/youtube_data?page=1] (localhost:5000/youtube_data?page=1), this will fetch the first five rows from our table, change page query param to get subsequent pages.
 4. To search data on the basis of title and description visit [localhost:5000/search?query=hi] (localhost:5000/search?query=hi), this will fetch all videos which matches the query string we have provided here. 
 
-Thanks! May the fork be with you.
+Let me know if you face any issues with the setup.
+
+Thanks! May the fork be with you. 
