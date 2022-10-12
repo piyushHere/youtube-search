@@ -9,7 +9,7 @@ class YoutubeService(object):
         self.youtube_client = YoutubeClient()
     
     def get_youtube_data(self):
-        page = request.args.get('page', 1, type=int)
+        page = request.args.get('page', 0, type=int)
         offset = request.args.get('offset', 5, type=int)
         response = []
         objects = self.youtube_dao.get_videos(page, offset)
@@ -34,6 +34,8 @@ class YoutubeService(object):
         response = self.youtube_client.get_search_response()
         response = self.get_response_items_dict(response)
         self.youtube_dao.insert(response)
+        self.youtube_dao.commit()
+        self.youtube_dao.close()
 
     def get_response_items_dict(self, response):
         items = response["items"]
