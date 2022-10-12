@@ -16,12 +16,13 @@ from services.youtube import YoutubeService
 youtube_service = YoutubeService()
 migrate = Migrate(app, db)
 
-
 def youtube_cron_job():
     """Run scheduled job."""
-    print("Fetching data from youtube")
-    youtube_service.fetch_youtube()
-    print("Stored data fetched from youtube")
+    with app.app_context():
+        print("Fetching data from youtube")
+        youtube_service.fetch_youtube()
+        print("Stored data fetched from youtube")
+
 
 cron = BackgroundScheduler()
 cron.add_job(func=youtube_cron_job, trigger="interval", seconds=10)
@@ -44,6 +45,7 @@ def search_youtube_data():
     except Exception as e:
         print("something went wrong with the server", e)
         abort(500, e)
+
 
 atexit.register(lambda: cron.shutdown(wait=False))
 
