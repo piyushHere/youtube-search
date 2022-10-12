@@ -1,4 +1,5 @@
-from models import db, Youtube
+from extensions import db
+from models import Youtube
 from sqlalchemy import desc
 
 

@@ -1,18 +1,17 @@
-import config, atexit
+import config, atexit, json
 from flask import Flask, request, abort
 from flask_migrate import Migrate
 from clients.youtube import YoutubeClient
 from apscheduler.schedulers.background import BackgroundScheduler
+from extensions import db
 
 youtube_client = YoutubeClient()
-
-from sqlalchemy import desc
-import json
  
 
 app = Flask(__name__)
 app.config.from_object(config.Config)
-from models import db
+db.init_app(app)
+
 from services.youtube import YoutubeService
 youtube_service = YoutubeService()
 migrate = Migrate(app, db)
