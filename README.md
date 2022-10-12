@@ -3,8 +3,9 @@ Hey! Welcome, I usually ask the reader to grab a cup of coffee when the setup is
 If you are familiar with flask environment and are feeling a little adventourous and you want to set up locally make sure you create a virtual environment but I will only be discussing about
 the docker setup here.
 
-Steps:
+Before you begin with the setup, make sure you paste the .env file in the project's directory that I have provided separately. This env file contains application secrets like youtube api key, database credentials, etc.
 
+Steps:
 1. Make sure docker daemon is running on your system otherwise you won't be able to build the image in the next step.
 2. Build the docker image on your system using the command ```docker build --tag youtube-fetch . ```
 3. This will take a minute or so for the first time, go drink some water, stay hydrated!
